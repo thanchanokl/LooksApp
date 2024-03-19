@@ -6,13 +6,15 @@ import BodyShape from './screens/BodyShape';
 import PersonalColor from './screens/PersonalColor';
 import Signup from './screens/Signup';
 import Signin from './screens/Signin';
+import Home from './screens/Home';
 
 export default function App() {
   return (
       // <BodyShape/>
       // <PersonalColor/>
       // <Signup/>
-      <Signin/>
+      // <Signin/>
+      <Home/>
 
 
       

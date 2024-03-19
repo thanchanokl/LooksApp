@@ -1,68 +1,70 @@
 import React from 'react';
-import { Button, Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { FontAwesome } from '@expo/vector-icons';
 
 export default function Signin() {
     return (
         <View style={{flexDirection:"column", backgroundColor: 'white'}}>
-        {/* View ก้อนที่ 1  */}    
-            <View style={{flexDirection: 'row',justifyContent: 'space-between',alignItems: 'center',padding: 20, backgroundColor: "#eb6d79"}}>
-                <TouchableOpacity style={{width:20,height: 20,marginTop: -15, marginRight: 20}}>
-                    <Image style={{ width: 165.5, height: 37.5}} source={require("../assets/icon/logo-2.png")} />
+        {/* ส่วนที่ 1 */}
+            <View style={{flexDirection: 'column', marginTop:40}}>
+                <Image style={{ width: 200, height: 200, alignSelf:'center'}} source={require("../assets/logo-21.png")} />
+            </View>
+
+           <View style={{flexDirection: 'column', marginLeft:25}}>
+                <Text style={{ fontSize : 24}}>Sign in</Text>
+            </View>
+            
+        {/* ส่วนที่ 2 */}
+            <View style={{flexDirection: 'column', padding : 20}}>
+                <Text style={{ fontSize : 16, marginBottom:3 }}>Phone Number</Text>
+                <View style={{flexDirection: 'row', height: 50, width: 400, borderRadius: 10, backgroundColor:'#f1f1f1', padding:10, alignItems:'center'}}>
+                    <Image style={{ width: 20, height: 20, marginTop: 4, borderRadius: 10}} source={require("../assets/flag.png")} />
+                    <Text style={{ fontSize : 16 , color:'black', textAlign:'center', marginTop: 4.5 , marginLeft: 5, marginRight: 5}}>+66</Text>
+                    <FontAwesome name="angle-down" size={20} color="black" marginTop={5}/>
+                    <TextInput style={{ fontSize : 14, marginLeft: 5, color:'#d8d8d8'}} placeholder="Phone Number" />
+                </View>
+            </View>
+            
+        {/* ส่วนที่ 3 */}
+            <View style={{flexDirection: 'row', justifyContent: 'center'}}>
+                <TouchableOpacity style={{height: 50, width: 400, justifyContent: 'center', borderRadius: 15, borderWidth: 0.5, borderColor: '#CAADDD', backgroundColor: '#CAADDD'}}>
+                    <Text style={{ fontSize : 18 , color:'black', textAlign:'center'}}>SIGN IN</Text>
                 </TouchableOpacity>
-                
-                <TouchableOpacity style={{width:20,height: 20,marginTop: -5, marginRight: 20}}>
-                    <Image style={{ width: 25, height: 25}} source={require("../assets/icon/menu-1.png")} />
+            </View>
+
+            <View style={{flexDirection: 'row', alignItems: 'center', justifyContent:'center', marginTop:5}}>
+                <Text style={{ fontSize : 13, color:'#afafaf' }}>Do you have an account?</Text>
+                <TouchableOpacity style={{justifyContent: 'center'}}>
+                    <Text style={{ fontSize: 13, color:'#CAADDD', marginLeft: 5}}>Sign in</Text>
+                </TouchableOpacity>
+            </View>
+
+        {/* ส่วนที่ 4 */}
+        <View style={{flexDirection: 'column', padding : 20}}>
+                <Text style={{ fontSize : 16, marginBottom:3 }}>Sign in with</Text>
+                <View style={{flexDirection: 'row', height: 40, width: 40, borderRadius: 10, backgroundColor:'#f1f1f1', padding:10, alignItems:'center'}}>
+                    <View style={{flexDirection: 'row',}}>
+                        <Image style={{ width: 22, height: 22, marginTop: 4, borderRadius: 5, backgroundColor:'#f1f1f1', alignItems:'center'}} source={require("../assets/google.png")} />
+                        <Image style={{ width: 22, height: 22, marginTop: 4, borderRadius: 5, backgroundColor:'#f1f1f1', alignItems:'center'}} source={require("../assets/fb.png")} />
+                        <Image style={{ width: 22, height: 22, marginTop: 4, borderRadius: 5, backgroundColor:'#f1f1f1', alignItems:'center'}} source={require("../assets/apple.png")} />
+                    </View>
+                </View>
+            </View>
+
+        {/* ส่วนที่ 3 */}
+            <View style={{flexDirection: 'row', justifyContent: 'center'}}>
+                    <TouchableOpacity style={{height: 50, width: 400, justifyContent: 'center', borderRadius: 15, borderWidth: 0.5}}>
+                        <Text style={{ fontSize : 18 , color:'black', textAlign:'center'}}>CONTINUE AS A GUEST</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style={{flexDirection: 'row', alignItems: 'center', justifyContent:'center', marginTop:5}}>
+                <Text style={{ fontSize : 13, color:'#afafaf' }}>Create an new account?</Text>
+                <TouchableOpacity style={{justifyContent: 'center'}}>
+                    <Text style={{ fontSize: 13, color:'#CAADDD', marginLeft: 5}}>Sign up</Text>
                 </TouchableOpacity>
             </View>
             
-        {/* View ก้อนที่ 2  */}
-            <View style={{flexDirection: 'column',alignItems: 'center',padding: 20, marginTop: 20}}>
-                <Image style={{ width: 200, height: 100}} source={require("../assets/icon/logo-1.png")} />
-            </View>
-
-        {/* View ก้อนที่ 3  */}
-            <View style={{ padding : 20, marginLeft:15, marginRight:15 }}>
-                <View style={{flexDirection: 'column', marginTop:-10}}>
-                    <Text style={{ fontSize : 15, marginBottom:3}}>Username</Text>
-                    <TextInput style={{ fontSize : 15 ,borderRadius:5, borderWidth:0.5, borderColor:'gray',paddingLeft:10 }} placeholder="Enter your name" />
-                </View>
-
-                <View style={{flexDirection: 'column', marginTop:40}}>
-                    <Text style={{ fontSize : 15, marginBottom:3 }}>Password</Text>
-                    <TextInput style={{ fontSize : 15 ,borderRadius:5, borderWidth:0.5, borderColor:'gray',paddingLeft:10 }} placeholder="Enter your password" />
-                </View>
-
-                <View style={{flexDirection: 'row', justifyContent: 'center', marginTop: 60}}>
-                    <TouchableOpacity style={{height: 30, width: 100, justifyContent: 'center', borderRadius: 5, borderWidth: 0.5, borderColor: '#7365a2', backgroundColor: '#7365a2'}}>
-                        <Text style={{ fontSize : 15 , color:'white', textAlign:'center'}}>Log In</Text>
-                    </TouchableOpacity>
-                </View>
-
-                
-                <View style={{flexDirection: 'row', justifyContent: 'center', marginTop: 200, height: 30, width: 370,justifyContent: 'center', borderRadius: 5, borderWidth: 0.5, borderColor:'gray'}}>
-                    <Image style={{ width: 20, height: 20, marginTop: 4}} source={require("../assets/icon/google.jpg")} />
-                    <TouchableOpacity style={{}}>
-                        <Text style={{ fontSize : 15 , color:'gray', textAlign:'center', marginTop: 3, marginLeft:6}}>Sign in with Google</Text>
-                    </TouchableOpacity>
-                </View>
-
-               
-                <View style={{flexDirection: 'row', alignItems: 'center', justifyContent:'center', marginTop:5}}>
-                    <Text style={{ fontSize : 10 }}>Create new user account</Text>
-                    <TouchableOpacity style={{justifyContent: 'center'}}>
-                        <Text style={{ fontSize: 10, color:'blue', marginLeft: 5}}>Register here</Text>
-                    </TouchableOpacity>
-                </View>
-
-                <View style={{flexDirection: 'row', alignItems: 'center', justifyContent:'center', marginTop:1}}>
-                    <Text style={{ fontSize : 10 }}>Forgot your password?</Text>
-                    <TouchableOpacity style={{justifyContent: 'center'}}>
-                        <Text style={{ fontSize: 10, color:'blue', marginLeft: 5}}>Reset password</Text>
-                    </TouchableOpacity>
-                </View>
-                
-                
-            </View>
         </View>    
     );
 }

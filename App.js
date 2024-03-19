@@ -2,15 +2,17 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-import Signin from './screens/Signin';
-import Signup from './screens/Signup';
 import BodyShape from './screens/BodyShape';
+import PersonalColor from './screens/PersonalColor';
+import Signup from './screens/Signup';
+import Signin from './screens/Signin';
 
 export default function App() {
   return (
-      <Signin/>
-      // <Signup/>
       // <BodyShape/>
+      // <PersonalColor/>
+      // <Signup/>
+      <Signin/>
 
 
       

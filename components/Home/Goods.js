@@ -23,12 +23,6 @@ export default function Goods(props) {
 
     return (
         <View style={{flex: 1}}>
-            <View style={{flexDirection:'row', padding:20}}>
-                <MaterialCommunityIcons name="widgets-outline" size={24} color="black" />
-                <MaterialIcons name="mail-outline" size={24} color="black" marginLeft={330}/>
-                <Feather name="bell" size={24} color="black" marginLeft={10}/>
-            </View>
-        
             <View style={{padding:20}}>
                 <FlatList
                     horizontal={false}

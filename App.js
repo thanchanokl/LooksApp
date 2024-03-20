@@ -7,6 +7,7 @@ import PersonalColor from './screens/PersonalColor';
 import Signup from './screens/Signup';
 import Signin from './screens/Signin';
 import Home from './screens/Home';
+import Goods from './screens/Goods';
 
 export default function App() {
   return (
@@ -14,7 +15,8 @@ export default function App() {
       // <PersonalColor/>
       // <Signup/>
       // <Signin/>
-      <Home/>
+      <Goods/>
+      //<Home/>
 
 
       

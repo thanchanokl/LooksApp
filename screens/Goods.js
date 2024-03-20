@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Dimensions, FlatList, Image, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { MaterialCommunityIcons, MaterialIcons, Feather } from '@expo/vector-icons';
 
-export default function Home(props) {
+export default function Goods(props) {
 
     const [goods, setGoods] = useState([]); 
     const loadGoods = async () => {

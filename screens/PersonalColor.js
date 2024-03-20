@@ -14,18 +14,18 @@ const onPressButton = () => {
     };
 
     const skinToneImages = [
-        { uri: require("../assets/SkinTone/1_pale_ivory.jpg"), name: "Pale Ivory" },
-        { uri: require("../assets/SkinTone/2_warm_ivory.jpg"), name: "Warm Ivory" },
-        { uri: require("../assets/SkinTone/3_sand.jpg"), name: "Sand" },
-        { uri: require("../assets/SkinTone/4_rose_beige.jpg"), name: "Rose Beige" },
-        { uri: require("../assets/SkinTone/5_limestone.jpg"), name: "Limestone" },
-        { uri: require("../assets/SkinTone/6_beige.jpg"), name: "Beige" },
-        { uri: require("../assets/SkinTone/7-seinna.jpg"), name: "Seinna" },
-        { uri: require("../assets/SkinTone/8-amber.jpg"), name: "Amber" },
-        { uri: require("../assets/SkinTone/9-honey.jpg"), name: "Honey" },
-        { uri: require("../assets/SkinTone/10-band.jpg"), name: "Band" },
-        { uri: require("../assets/SkinTone/11-almond.jpg"), name: "Almond" },
-        { uri: require("../assets/SkinTone/12-bronze.jpg"), name: "Bronze" }
+        { uri: require("../assets/skinTone/1_pale_ivory.jpg"), name: "Pale Ivory" },
+        { uri: require("../assets/skinTone/2_warm_ivory.jpg"), name: "Warm Ivory" },
+        { uri: require("../assets/skinTone/3_sand.jpg"), name: "Sand" },
+        { uri: require("../assets/skinTone/4_rose_beige.jpg"), name: "Rose Beige" },
+        { uri: require("../assets/skinTone/5_limestone.jpg"), name: "Limestone" },
+        { uri: require("../assets/skinTone/6_beige.jpg"), name: "Beige" },
+        { uri: require("../assets/skinTone/7-seinna.jpg"), name: "Seinna" },
+        { uri: require("../assets/skinTone/8-amber.jpg"), name: "Amber" },
+        { uri: require("../assets/skinTone/9-honey.jpg"), name: "Honey" },
+        { uri: require("../assets/skinTone/10-band.jpg"), name: "Band" },
+        { uri: require("../assets/skinTone/11-almond.jpg"), name: "Almond" },
+        { uri: require("../assets/skinTone/12-bronze.jpg"), name: "Bronze" }
     ];
 
     const columns = 4;
@@ -66,23 +66,23 @@ const onPressButton = () => {
                 <Text style={{ fontSize: 18 , marginLeft:18, marginTop:10, marginBottom:10, color:'#caaddd'}}>VEIN TONE</Text>
                 <View style={{flexDirection:"column", alignItems:'center', backgroundColor:'#f1f1f1', padding:5, marginLeft:10, marginRight:10, marginBottom:10}}>
                     <View style={{flexDirection:"row", alignItems:'center'}}> 
-                        <Image style={{ width: 60, height: 60, marginRight:-10 }} source={require("../assets/VeinTone/purple.png")} />
-                        <Image style={{ width: 60, height: 60, marginLeft:-10 }} source={require("../assets/VeinTone/blue.png")} />
+                        <Image style={{ width: 60, height: 60, marginRight:-10 }} source={require("../assets/veinTone/purple.png")} />
+                        <Image style={{ width: 60, height: 60, marginLeft:-10 }} source={require("../assets/veinTone/blue.png")} />
                     </View>
                     <Text style={{ fontSize: 11, marginTop:3}}>Cool Skin Tone</Text>
                 </View>
                 <View style={{flexDirection:"column", alignItems:'center', backgroundColor:'#f1f1f1', padding:5, marginLeft:10, marginRight:10,marginBottom:10}}>
                     <View style={{flexDirection:"row", alignItems:'center'}}> 
-                        <Image style={{ width: 60, height: 60, marginRight:-10}} source={require("../assets/VeinTone/blue.png")} />
-                        <Image style={{ width: 60, height: 60, marginLeft:-10 }} source={require("../assets/VeinTone/bluegreen.png")} />
-                        <Image style={{ width: 60, height: 60, marginLeft:-10 }} source={require("../assets/VeinTone/green1.png")} />
+                        <Image style={{ width: 60, height: 60, marginRight:-10}} source={require("../assets/veinTone/blue.png")} />
+                        <Image style={{ width: 60, height: 60, marginLeft:-10 }} source={require("../assets/veinTone/bluegreen.png")} />
+                        <Image style={{ width: 60, height: 60, marginLeft:-10 }} source={require("../assets/veinTone/green1.png")} />
                     </View>
                     <Text style={{ fontSize: 11, marginTop:3}}>Natural Skin Tone</Text>
                 </View>
                 <View style={{flexDirection:"column", alignItems:'center', backgroundColor:'#f1f1f1', padding:5, marginLeft:10, marginRight:10,marginBottom:10}}>
                     <View style={{flexDirection:"row", alignItems:'center'}}> 
-                        <Image style={{ width: 60, height: 60, marginRight:-10}} source={require("../assets/VeinTone/green2.png")} />
-                        <Image style={{ width: 60, height: 60, marginLeft:-10 }} source={require("../assets/VeinTone/yellowgreen.png")} />
+                        <Image style={{ width: 60, height: 60, marginRight:-10}} source={require("../assets/veinTone/green2.png")} />
+                        <Image style={{ width: 60, height: 60, marginLeft:-10 }} source={require("../assets/veinTone/yellowgreen.png")} />
                     </View>
                     <Text style={{ fontSize: 11, marginTop:3}}>Warm Skin Tone</Text>
                 </View>

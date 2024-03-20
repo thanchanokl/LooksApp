@@ -53,7 +53,7 @@ export default function BodyShape() {
             <View style={{ flexDirection:"column"}}>
                 <Text style={{ fontSize: 18, marginLeft:18, marginTop:10, marginBottom:10, color:'#caaddd' }}>BODY SHAPE</Text>
                 {/* ส่วนที่ 2 */}
-                <Image style={{ width: 180, height: 180, alignSelf:'center'}} source={require("../assets/BodyShape/measure.png")} />
+                <Image style={{ width: 180, height: 180, alignSelf:'center'}} source={require("../assets/bodyShape/measure.png")} />
                 {/* Shoulder input */}
                 <View style={{ backgroundColor: "white", margin: 20,marginTop:20, borderRadius: 10}}>
                     <Text style={{ fontSize : 16, marginBottom:3 }}>Shoulder Size</Text>

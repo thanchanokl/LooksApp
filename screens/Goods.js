@@ -45,7 +45,7 @@ export default function Home(props) {
                                         <Text style={{fontSize:12, color:'black', textAlign:'center', flexWrap:'wrap', width:'95%',marginBottom:5}}> {item.type} </Text>
                                         <View style={{flexDirection:"row", justifyContent:'center'}}>
                                             <Text style={{fontSize:14, color:'black', textAlign:'center'}}> {item.price} </Text>
-                                            <Text style={{fontSize:14, color:'black', textAlign:'center'}}> {item.Currency} </Text>
+                                            <Text style={{fontSize:14, color:'black', textAlign:'center'}}> {item.currency} </Text>
                                         </View>
                                     </View>
                                 </View>

@@ -42,7 +42,7 @@ export default function Home(props) {
                                     <Image style={{width: '99%', height: 200, borderWidth: 0.5, borderTopLeftRadius:10, borderTopRightRadius:10}} source={{ uri: item.uri }} />
                                     <View style={{flexDirection:"column", padding: 10, justifyContentt:'center', alignItems: 'center'}}>
                                         <Text style={{fontSize:15, color:'black', textAlign:'center', flexWrap:'wrap', width:'90%',marginBottom:5}}> {item.title} </Text>
-                                        <Text style={{fontSize:12, color:'gray', textAlign:'center', flexWrap:'wrap', width:'95%',marginBottom:5}}> {item.type} </Text>
+                                        <Text style={{fontSize:12, color:'black', textAlign:'center', flexWrap:'wrap', width:'95%',marginBottom:5}}> {item.type} </Text>
                                         <View style={{flexDirection:"row", justifyContent:'center'}}>
                                             <Text style={{fontSize:14, color:'black', textAlign:'center'}}> {item.price} </Text>
                                             <Text style={{fontSize:14, color:'black', textAlign:'center'}}> {item.Currency} </Text>

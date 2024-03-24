@@ -9,7 +9,7 @@ export default function HairColor() {
             {/* ส่วนที่ 1 */}
             <View style={{ flexDirection:"column"}}>
                 <Text style={{ fontSize: 18, marginLeft:18, marginTop:10, marginBottom:10, color:'#caaddd' }}>ผม</Text>
-                <Text style={{ fontSize : 10, marginTop:-5, marginBottom:10, margin: 20}}>* สีผมตามธรรมชาติ ตั้งแต่แรกเกิด</Text>
+                <Text style={{ fontSize : 10, marginTop:-5, marginBottom:10, margin: 20}}>* สีผมโดยธรรมชาติตั้งแต่กำเนิด</Text>
             {/* ส่วนที่ 2 */}    
                 <View style={{flexDirection:"row", alignItems:'center', justifyContent:'space-around'}}>
                     <View style={{flexDirection:"row", width: 190, height: 60, backgroundColor:'#f1f1f1', 

@@ -7,7 +7,7 @@ export default function Goods(props) {
     const [goods, setGoods] = useState([]); 
     const loadGoods = async () => {
         try{
-            let promise = await fetch('https://raw.githubusercontent.com/thanchanokl/LooksApp/main/info.json');
+            let promise = await fetch('https://raw.githubusercontent.com/thanchanokl/LooksApp/main/infoGoods.json');
             let data = await promise.json();
             console.log("Load Data : " , data);
         //SET STATE

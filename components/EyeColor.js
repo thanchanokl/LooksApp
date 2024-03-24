@@ -8,6 +8,7 @@ export default function EyeColor() {
             {/* ส่วนที่ 1 */}
             <View style={{ flexDirection:"column"}}>
                 <Text style={{ fontSize: 18, marginLeft:18, marginTop:10, marginBottom:10, color:'#caaddd' }}>ดวงตา</Text>
+                <Text style={{ fontSize : 10, marginTop:-5, marginBottom:10, margin: 20}}>* สีตาโดยธรรมชาติตั้งแต่กำเนิด</Text>
                 
             {/* ส่วนที่ 2 */}    
                 <View style={{flexDirection:"row", alignItems:'center', justifyContent:'space-around'}}>

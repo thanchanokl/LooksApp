@@ -1,22 +1,21 @@
 import React from 'react';
 import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
+import Logo from '../components/Logo';
 
 export default function Signup() {
     return (
         <View style={{flexDirection:"column", backgroundColor: 'white'}}>
-        {/* ส่วนที่ 1  */}
-            <View style={{flexDirection: 'column', marginTop:40}}>
-                <Image style={{ width: 200, height: 200, alignSelf:'center'}} source={require("../assets/icon/logo-21.png")} />
-            </View>
+            <Logo/>
 
+        {/* ส่วนที่ 1  */}
            <View style={{flexDirection: 'column', marginLeft:25}}>
                 <Text style={{ fontSize : 24}}>Sign in</Text>
             </View>
             
         {/* ส่วนที่ 2  */}
             <View style={{ padding : 20, alignItems:'center'}}>
-                <View style={{flexDirection: 'column', marginTop:-10}}>
+                <View style={{flexDirection: 'column'}}>
                     <Text style={{ fontSize : 16, marginBottom:3 }}>Username</Text>
                     <TextInput style={{ fontSize : 14 , height: 50, width: 400,justifyContent: 'center', borderRadius: 10, backgroundColor:'#f1f1f1', color:'#d8d8d8', padding:10}} placeholder="Enter your name" />
                 </View>

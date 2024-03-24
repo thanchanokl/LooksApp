@@ -1,27 +1,28 @@
 import React from 'react';
 import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
+import Logo from '../components/Logo';
 
 export default function Signin() {
     return (
         <View style={{flexDirection:"column", backgroundColor: 'white'}}>
-        {/* ส่วนที่ 1 */}
-            <View style={{flexDirection: 'column', marginTop:40}}>
-                <Image style={{ width: 200, height: 200, alignSelf:'center'}} source={require("../assets/icon/logo-21.png")} />
-            </View>
+            <Logo/>
 
+        {/* ส่วนที่ 1 */}
            <View style={{flexDirection: 'column', marginLeft:25}}>
                 <Text style={{ fontSize : 24}}>Sign in</Text>
             </View>
             
         {/* ส่วนที่ 2 */}
-            <View style={{flexDirection: 'column', padding : 20}}>
-                <Text style={{ fontSize : 16, marginBottom:10, marginLeft:6 }}>Phone Number</Text>
-                <View style={{flexDirection: 'row', height: 50, width: 400, borderRadius: 10, backgroundColor:'#f1f1f1', padding:10, alignItems:'center', alignSelf:'center'}}>
-                    <Image style={{ width: 20, height: 20, marginTop: 3, borderRadius: 10}} source={require("../assets/icon/flag.png")} />
-                    <Text style={{ fontSize : 16 , color:'black', textAlign:'center', marginTop: 2.5 , marginLeft: 5, marginRight: 5}}>+66</Text>
-                    <FontAwesome name="angle-down" size={20} color="black" marginTop={2}/>
-                    <TextInput style={{ fontSize : 14, marginLeft: 5, color:'#d8d8d8'}} placeholder="Phone Number" />
+        <View style={{ padding : 20, alignItems:'center'}}>
+                <View style={{flexDirection: 'column'}}>
+                    <Text style={{ fontSize : 16, marginBottom:3 }}>Phone Number</Text>
+                    <View style={{flexDirection: 'row', height: 50, width: 400, borderRadius: 10, backgroundColor:'#f1f1f1', padding:10}}>
+                        <Image style={{ width: 20, height: 20, marginTop: 4, borderRadius: 10}} source={require("../assets/icon/flag.png")} />
+                        <Text style={{ fontSize : 16 , color:'black', textAlign:'center', marginTop: 4.5 , marginLeft: 5, marginRight: 5}}>+66</Text>
+                        <FontAwesome name="angle-down" size={20} color="black" marginTop={5}/>
+                        <TextInput style={{ fontSize : 14, marginLeft: 5, color:'#d8d8d8'}} placeholder="Phone Number" />
+                    </View>
                 </View>
             </View>
             

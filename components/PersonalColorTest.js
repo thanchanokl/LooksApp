@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { Fontisto } from '@expo/vector-icons';
 
-export default function PersonalColor() {
+export default function PersonalColorTest() {
 const onPressButton = () => {
     console.log("Button pressed");
 };

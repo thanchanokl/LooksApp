@@ -2,13 +2,18 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-import BodyShape from './screens/BodyShape';
-import PersonalColor from './screens/PersonalColor';
+import BodyShape from './components/BodyShape';
+import PersonalColor from './components/PersonalColorTest';
 import Signup from './screens/Signup';
 import Signin from './screens/Signin';
 import Home from './screens/Home';
 import Goods from './components/Home/Goods';
 import Bar from './components/BottomBar';
+import BottomTab from './navigations/BottomTab';
+import { NavigationContainer } from '@react-navigation/native';
+import HomeStack from './navigations/HomeStack';
+import VeinTone from './components/VeinTone';
+import PersonalColor2 from './components/PersonalColor';
 
 export default function App() {
   return (
@@ -16,10 +21,17 @@ export default function App() {
       // <PersonalColor/>
       // <Signup/>
       // <Signin/>
-      // <Goods/>
-      <Home/>
+      <Goods/>
 
+      // <Home/>
       // <Bar/>
+      // <NavigationContainer>
+      //   <BottomTab/>
+        
+      // </NavigationContainer>
+
+      //<PersonalColor2/>
+      
 
 
       

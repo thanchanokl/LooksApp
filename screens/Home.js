@@ -1,11 +1,10 @@
 import React from 'react';
-import TopBar from '../components/Home/TopBar';
 import { ScrollView, Text, View } from 'react-native';
-import Goods from '../components/Home/Goods';
-import BottomBar from '../components/BottomBar';
-import Category from '../components/Category';
-import { Ionicons } from '@expo/vector-icons';
+import TopBar from '../components/Home/TopBar';
 import Banner from '../components/Banner';
+import Category from '../components/Category';
+import Goods from '../components/Home/Goods';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function Home() {
     return (
@@ -18,6 +17,7 @@ export default function Home() {
                     <Ionicons name="square" size={13} color="#caaddd" style={{marginTop:7}}/>
                     <Text style={{ fontSize: 18, marginLeft:5 }}>Tops hit</Text>
                 </View>
+                
                 <Goods/>
                 
             </View>

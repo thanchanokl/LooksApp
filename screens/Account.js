@@ -1,7 +1,7 @@
 import React from 'react';
 import { ScrollView, Text, View } from 'react-native';
 
-export default function Profile() {
+export default function Account() {
     return (
        <ScrollView>
             <View style={{ flex: 1, backgroundColor:'white',alignItems:'center' }}>

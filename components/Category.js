@@ -15,7 +15,7 @@ export default function Category() {
                     <View style={{width: 60, height: 60, backgroundColor:'#f1f1f1', 
                     borderRadius:90, 
                     marginLeft:20, marginRight:10, marginBottom:5, 
-                    justifyContent: 'center', alignItems: 'center', alignSelf:'center'}}>
+                    justifyContent: 'center', alignItems: 'center', alignSelf:'center'}}> 
                         <Image style={{ width: '100%', height: '100%', alignSelf:'center',borderRadius:90}} source={require("../assets/goods/KnittedShortSleeveTop.jpg")} />
                     </View>
                         <Text style={{ fontSize : 14, textAlign:'center', color:'#caaddd'}}>Tops</Text>
@@ -24,7 +24,7 @@ export default function Category() {
                     <View style={{width: 60, height: 60, backgroundColor:'#f1f1f1', 
                     borderRadius:90, 
                     marginLeft:20, marginRight:10, marginBottom:5, 
-                    justifyContent: 'center', alignItems: 'center', alignSelf:'center'}}> 
+                    justifyContent: 'center', alignItems: 'center', alignSelf:'center'}}>
                         <Image style={{ width: '100%', height: '100%', alignSelf:'center',borderRadius:90}} source={require("../assets/goods/SolidBuckleUpMiniSkirt.jpg")} />
                     </View>
                         <Text style={{ fontSize : 14, textAlign:'center', color:'#caaddd'}}>Bottoms</Text>

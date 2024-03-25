@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Dimensions, FlatList, Image, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { MaterialCommunityIcons, MaterialIcons, Feather } from '@expo/vector-icons';
+import { Dimensions, FlatList, Image, Text, View } from 'react-native';
 
 export default function Goods(props) {
 
@@ -38,8 +37,8 @@ export default function Goods(props) {
                                         <Text style={{fontSize:15, color:'black', textAlign:'center', flexWrap:'wrap', width:'90%',marginBottom:5}}> {item.title} </Text>
                                         <Text style={{fontSize:12, color:'black', textAlign:'center', flexWrap:'wrap', width:'95%',marginBottom:5}}> {item.type} </Text>
                                         <View style={{flexDirection:"row", justifyContent:'center'}}>
-                                            <Text style={{fontSize:14, color:'black', textAlign:'center'}}> {item.price} </Text>
                                             <Text style={{fontSize:14, color:'black', textAlign:'center'}}> {item.currency} </Text>
+                                            <Text style={{fontSize:14, color:'black', textAlign:'center'}}> {item.price} </Text>
                                         </View>
                                     </View>
                                 </View>

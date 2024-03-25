@@ -7,7 +7,8 @@ import Search from '../screens/Search';
 import Looks from '../screens/Looks';
 import PersonalColor from '../components/PersonalColor';
 import Cart from '../screens/Cart';
-import Profile from '../screens/Profile';
+import Profile from '../screens/Account';
+import Account from '../screens/Account';
 
 const Tab = createBottomTabNavigator();
 
@@ -49,8 +50,8 @@ export default function BottomTab() {
             }}
           />
           <Tab.Screen
-            name="Profile"
-            component={Profile}
+            name="Account"
+            component={Account}
             options={{
               tabBarLabel: "",
               tabBarIcon: ({ color, size }) => ( <Ionicons name="person" color={color} size={size} /> ),

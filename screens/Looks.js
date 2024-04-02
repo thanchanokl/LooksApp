@@ -3,6 +3,7 @@ import { ScrollView, View } from 'react-native';
 import BodyShape from '../components/BodyShape';
 import PersonalColor from '../components/PersonalColor';
 
+
 export default function Looks() {
     return (
        <ScrollView>

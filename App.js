@@ -17,6 +17,7 @@ import BottomTab from './navigations/BottomTab';
 
 import PersonalColor from './components/PersonalColor';
 import Logo from './components/Logo';
+import LooksStack from './navigations/LooksStack';
 
 export default function App() {
   return (
@@ -32,7 +33,7 @@ export default function App() {
 
     <NavigationContainer>
       <BottomTab/>
-        
+      {/* <LooksStack/> */}
     </NavigationContainer>
 
       

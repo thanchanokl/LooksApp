@@ -1,7 +1,10 @@
 import React from 'react';
 import { ScrollView, Text, View } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
-import CustomerList from '../components/CustomerList';
+import CustomerList from '../components/Cart/CustomerList';
+import All from '../components/Cart/All';
+
+
 
 export default function Cart() {
     return (
@@ -14,6 +17,7 @@ export default function Cart() {
             </View>
 
         <CustomerList/>
+        <All/>
         </ScrollView>
     );
 }

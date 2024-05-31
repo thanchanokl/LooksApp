@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Text, TextInput, View } from "react-native";
+import { Button, Image, ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import ShouldersStorage from "../storages/ShouldersStorage";
 import BustStorage from "../storages/BustStorage";
@@ -49,14 +49,19 @@ export default function BodyShape() {
   };
 
   return (
-    <View style={{ padding: 10 }}>
+    <ScrollView>
+    <View style={{ padding: 10, backgroundColor: "white" }}>
+        <Text style={{ fontSize: 18, marginLeft:18, marginTop:10, marginBottom:10, color:'#caaddd' }}>Step 1 วัดสัดส่วนของคุณ</Text>
+        <View style={{ alignSelf: 'center' }}>
+            <Image style={{ width:160, height:160 }} source={require("../assets/bodyShape/measure.png")} />
+        </View>
         {/* Shoulders input */}
-        <View style={{ backgroundColor: "white", margin: 20,marginTop:20, borderRadius: 10}}>
+        <View style={{ margin: 20,marginTop:10, borderRadius: 10}}>
             <Text style={{ fontSize : 16, marginBottom:3 }}>Shoulders</Text>
-            <Text style={{ fontSize : 10, marginTop:-5, marginBottom:5}}>* วัดรอบส่วนที่สูงที่สุดของไหล่</Text>
+            <Text style={{ fontSize : 10, marginTop:-5, marginBottom:5}}>* วัดความกว้างจากปุ่มไหล่หนึ่งข้างไปอีกข้างหนึ่ง</Text>
             <View style={{ flexDirection:"row"}}>
                 <TextInput
-                    style={{ fontSize : 14 , height: 35, width: 300,justifyContent: 'center', borderRadius: 10, backgroundColor:'#f1f1f1', color:'#d8d8d8', padding:10 }}
+                    style={{ fontSize : 14 , height: 45, width: 300, justifyContent: 'center', borderRadius: 10, backgroundColor:'#f1f1f1', padding:10 }}
                     keyboardType="numeric"
                     placeholder="Enter your shoulders size"
                     value={shoulder.toString()}
@@ -67,12 +72,12 @@ export default function BodyShape() {
         </View>
 
         {/* Bust input */}
-        <View style={{ backgroundColor: "white", margin: 20, marginTop:0, borderRadius: 10 }}>
+        <View style={{ margin: 20, marginTop:0, borderRadius: 10 }}>
             <Text style={{ fontSize : 16, marginBottom:3 }}>Bust</Text>
-            <Text style={{ fontSize : 10, marginTop:-5, marginBottom:5}}>* วัดรอบส่วนที่กว้างที่สุดของหน้าอก ควรจะกระชับ แต่ไม่แน่นจนเกินไป</Text>
+            <Text style={{ fontSize : 10, marginTop:-5, marginBottom:5}}>* วัดรอบส่วนที่กว้างที่สุดของหน้าอก</Text>
             <View style={{ flexDirection:"row"}}>
                 <TextInput
-                    style={{ fontSize : 14 , height: 35, width: 300,justifyContent: 'center', borderRadius: 10, backgroundColor:'#f1f1f1', color:'#d8d8d8', padding:10 }}
+                    style={{ fontSize : 14 , height: 45, width: 300, justifyContent: 'center', borderRadius: 10, backgroundColor:'#f1f1f1', padding:10 }}
                     keyboardType="numeric"
                     placeholder="Enter your bust size"
                     value={bust.toString()}
@@ -83,12 +88,12 @@ export default function BodyShape() {
         </View>
 
         {/* Waist input */}
-        <View style={{ backgroundColor: "white", margin: 20, marginTop:0, borderRadius: 10 }}>
+        <View style={{ margin: 20, marginTop:0, borderRadius: 10 }}>
             <Text style={{ fontSize : 16, marginBottom:3 }}>Waist</Text>
-            <Text style={{ fontSize : 10, marginTop:-5, marginBottom:5}}>* วัดรอบส่วนที่เล็กที่สุดของเอว โดยทั่วไปจะอยู่เหนือสะดือ แต่อยู่ใต้ซี่โครง</Text>
+            <Text style={{ fontSize : 10, marginTop:-5, marginBottom:5}}>* วัดรอบส่วนที่เล็กที่สุดของเอว</Text>
             <View style={{ flexDirection:"row"}}>
                 <TextInput
-                    style={{ fontSize : 14 , height: 35, width: 300,justifyContent: 'center', borderRadius: 10, backgroundColor:'#f1f1f1', color:'#d8d8d8', padding:10 }}
+                    style={{ fontSize : 14 , height: 45, width: 300, justifyContent: 'center', borderRadius: 10, backgroundColor:'#f1f1f1', padding:10 }}
                     keyboardType="numeric"
                     placeholder="Enter your waist size"
                     value={waist.toString()}
@@ -99,12 +104,12 @@ export default function BodyShape() {
         </View>
 
         {/* Hips input */}
-        <View style={{ backgroundColor: "white", margin: 20, marginTop:0, borderRadius: 10 }}>
+        <View style={{ margin: 20, marginTop:0, borderRadius: 10 }}>
                 <Text style={{ fontSize : 16, marginBottom:3 }}>Hips</Text>
-                <Text style={{ fontSize : 10, marginTop:-5, marginBottom:5}}> * วัดรอบส่วนที่กว้างที่สุดของสะโพก</Text>
+                <Text style={{ fontSize : 10, marginTop:-5, marginBottom:5}}>* วัดรอบส่วนที่กว้างที่สุดของสะโพก</Text>
                 <View style={{ flexDirection:"row"}}>
                     <TextInput
-                        style={{ fontSize : 14 , height: 35, width: 300,justifyContent: 'center', borderRadius: 10, backgroundColor:'#f1f1f1', color:'#d8d8d8', padding:10 }}
+                        style={{ fontSize : 14 , height: 45, width: 300, justifyContent: 'center', borderRadius: 10, backgroundColor:'#f1f1f1', padding:10 }}
                         keyboardType="numeric"
                         placeholder="Enter your hips size"
                         value={hips.toString()}
@@ -114,8 +119,20 @@ export default function BodyShape() {
                 </View>
             </View>
 
-      <Button title="RESET" onPress={reset} />
-      <Button title="RESULT" onPress={save} />
+    <View style={{ flexDirection:"row", margin: 20, marginTop:0, borderRadius: 10, justifyContent: 'center' }}> 
+        <TouchableOpacity onPress={reset}>
+            <View style={{ width: 140, height: 50, margin: 10, backgroundColor: "#caaddd", borderRadius: 15, justifyContent:'center', alignSelf:'center', marginTop:10 }}>
+            <Text style={{ fontSize: 18, textAlign: "center", color: 'black' }}>RESET</Text>
+            </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={save}>
+            <View style={{ width: 140, height: 50, margin: 10, backgroundColor: "#caaddd", borderRadius: 15, justifyContent:'center', alignSelf:'center', marginTop:10 }}>
+            <Text style={{ fontSize: 18, textAlign: "center", color: 'black' }}>RESULT</Text>
+            </View>
+        </TouchableOpacity>
     </View>
+    </View>
+    </ScrollView>
   );
 }

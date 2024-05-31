@@ -3,6 +3,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import BodyShape from '../components/BodyShape';
 import PersonalColor from '../components/PersonalColor';
 import BodyShapeResult from '../components/BodyShapeResult';
+import PersonalColorCheck from '../components/PersonalColorCheck';
+
 
 const Stack = createStackNavigator();
 
@@ -12,17 +14,22 @@ export default function LooksStack() {
           <Stack.Screen
             name="BodyShape"
             component={BodyShape}
-            options={{ title: "BodyShape"}}
+            options={{ title: ""}}
           />
           <Stack.Screen
             name="BodyShapeResult"
             component={BodyShapeResult}
-            options={{ title: "BodyShapeResult"}}
+            options={{ title: ""}}
           />
           <Stack.Screen
             name="PersonalColor"
             component={PersonalColor}
-            options={{ title: "PersonalColor"}}
+            options={{ title: ""}}
+          />
+          <Stack.Screen
+            name="PersonalColorCheck"
+            component={PersonalColorCheck}
+            options={{ title: ""}}
           />
           
           

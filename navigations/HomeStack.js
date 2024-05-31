@@ -1,8 +1,10 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../screens/Home';
-import Search from '../screens/Search';
-import Goods from '../components/Home/Goods';
+
+import Goods from '../screens/Goods';
+import GoodsDetail from '../screens/GoodsDetail';
+
 
 const Stack = createStackNavigator();
 
@@ -19,7 +21,11 @@ export default function HomeStack() {
             component={Goods}
             options={{ title: "Goods", headerShown: false }}
           />
-          
+          <Stack.Screen
+            name="GoodsDetail"
+            component={GoodsDetail}
+            options={{ title: "GoodsDetail", headerShown: false }}
+          />
         </Stack.Navigator>
       );
     }

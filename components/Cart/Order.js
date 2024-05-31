@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FlatList, Image, Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 
-export default function CustomerList() {
+export default function Order() {
     const [goods, setGoods] = useState([]);
     const [quantities, setQuantities] = useState({});
 
@@ -43,7 +43,7 @@ export default function CustomerList() {
     };
 
     return (
-        <View style={{ padding: 10, backgroundColor: 'white' }}>
+        <View style={{ paddingTop : 10, backgroundColor: 'white' }}>
             <FlatList
                 horizontal={false}
                 data={goods}

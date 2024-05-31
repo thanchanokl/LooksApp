@@ -3,14 +3,15 @@ import { ScrollView, Text, View } from 'react-native';
 import TopBar from '../components/Home/TopBar';
 import Banner from '../components/Banner';
 import Category from '../components/Category';
-import Goods from '../components/Home/Goods';
 import { Ionicons } from '@expo/vector-icons';
+import Goods from './Goods';
+
 
 export default function Home() {
     return (
        <ScrollView>
-            <View style={{ flex: 1, paddingTop : 50, backgroundColor:'white' }}>
-                <TopBar/>
+            <View style={{ flex: 1, paddingTop : 10, backgroundColor:'white' }}>
+                {/* <TopBar/> */}
                 <Banner/>
                 <Category/>
                 <View style={{ flexDirection:"row", marginLeft:20, marginTop:15}}>

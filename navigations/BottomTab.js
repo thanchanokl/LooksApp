@@ -5,8 +5,11 @@ import Home from '../screens/Home';
 import Search from '../screens/Search';
 import Looks from '../screens/Looks';
 import Cart from '../screens/Cart';
-import Account from '../screens/Account';
+
 import { Image, View } from 'react-native';
+
+import Account from '../screens/Account';
+import LooksStack from './LooksStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -36,7 +39,7 @@ export default function BottomTab() {
           />
           <Tab.Screen
             name="Looks"
-            component={Looks}
+            component={LooksStack}
             options={{
               tabBarLabel: "",
               tabBarIcon: () => (

@@ -8,7 +8,7 @@ import BodyShape from './components/BodyShape';
 import Signup from './screens/Signup';
 import Signin from './screens/Signin';
 import Home from './screens/Home';
-import Goods from './components/Home/Goods';
+
 import Bar from './components/BottomBar';
 import BottomTab from './navigations/BottomTab';
 
@@ -18,6 +18,7 @@ import BottomTab from './navigations/BottomTab';
 import PersonalColor from './components/PersonalColor';
 import Logo from './components/Logo';
 import LooksStack from './navigations/LooksStack';
+import RootStack from './navigations/RootStack';
 
 export default function App() {
   return (
@@ -32,7 +33,7 @@ export default function App() {
     // <Bar/>
 
     <NavigationContainer>
-      <BottomTab/>
+      <RootStack/>
       {/* <LooksStack/> */}
     </NavigationContainer>
 

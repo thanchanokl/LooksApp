@@ -5,7 +5,7 @@ import SearchBar from '../components/SearchBar';
 export default function Search() {
     return (
        <ScrollView>
-            <View style={{ flex: 1, paddingTop : 50, backgroundColor:'white' }}>
+            <View style={{paddingTop : 10, backgroundColor:'white' }}>
                 <SearchBar/>
             </View>
         </ScrollView>

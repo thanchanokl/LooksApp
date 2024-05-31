@@ -1,11 +1,9 @@
 import React from 'react';
 import { Image, Text, View } from 'react-native';
-import { Fontisto } from '@expo/vector-icons';
 
 export default function VeinTone() {
     return (
         <View style={{padding:10, marginTop:10}}>
-            <Fontisto name="close-a" size={14} color="#caaddd" marginLeft={390}/>
             {/* ส่วนที่ 1 */}
             <View style={{ flexDirection:"column"}}>
                 <Text style={{ fontSize: 18, marginLeft:18, marginTop:10, marginBottom:10, color:'#caaddd' }}>เส้นเลือด</Text>
